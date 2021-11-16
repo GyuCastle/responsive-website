@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>대입 연산</title></head>
+<body>
+<h3>대입 연산</h3>
+<hr>
+<script>
+var x=1, y=2, z=3, w=4;
+document.write("x=" + x + ", y=" + y);
+document.write(", z=" + z + ",w=" + w + "<br><br>");
+y = x++; // x=x+3 -> x=6
+z += x; // y=y*3 -> y=9
+w = (x>3) ? w-3 : 3-w; // z=z%2 -> z=1
+document.write("x += 3; 실행 후, x=" + y + "<br>");
+document.write("y *= 3; 실행 후, y=" + z + "<br>");
+document.write("z %= 2; 실행 후, z=" + w);
+</script>
+</body>
+</html>
