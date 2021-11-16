@@ -126,6 +126,7 @@
 	margin: 0 4px;
 	color: var(--color-white);
 	cursor: pointer;
+	border: 1px solid transparent;
   }
   
   .navbar__menu__item:hover {
@@ -133,6 +134,25 @@
 	border-radius: var(--size-border-radius);
 	background-color: var(--color-dark-pink);
 	border-radius: var(--size-border-radius);
+  }
+
+  /* Scroll*/
+  .arrow-up {
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	width: 70px;
+	height: 70px;
+	font-size: 50px;
+	color: var(--color-white);
+	background-color: var(--color-pink);
+	border-radius: 50%;
+	display: 50%;
+	/* opacity: 0; */
+  }
+
+  .arrow-up.visible {
+	  display: block;
   }
   
   .navbar__toggle-btn {
@@ -476,6 +496,7 @@
 	#navbar {
 	  flex-direction: column;
 	  align-items: flex-start;
+	  background-color: var(--color-pink);
 	}
   
 	.navbar__menu {
@@ -483,6 +504,10 @@
 	  text-align: center;
 	  width: 100%;
 	  display: none;
+	}
+
+	.navbar__menu.open { 
+		display: block;
 	}
   
 	.about__majors {
