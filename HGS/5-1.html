@@ -1,0 +1,36 @@
+<!DOCTYPE htnl>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>도형 서식 폼 만들기</title>
+    </head>
+    <body>
+        <fieldset>
+            <h3>도형 서식 폼 만들기</h3>
+            <hr>
+            <form>
+                <li>
+                선종류
+                <select name="Line" size="2">
+                    <option value="1">선없음</option>
+                    <option value="1">실선</option>
+                    <option value="1">점선</option>
+                </li>
+                </select>
+                <li>
+                    <label for="thickness">선종류<small>(1~50)</small></label>
+                    <input type="number" id="thickness" value="1" min="0" max="50">
+                    <label>
+                        선색
+                        <input type="color" value="#00bfff">
+                    </label>
+                </li>
+                <li>
+                    <label for="Transparency">투명도<small>(0~100)</small></label>
+                    <input type="range" id="Figure" value="0" min="0" max="100">
+                </li>
+            </form>
+        </fieldset>
+    </body>
+</html>
